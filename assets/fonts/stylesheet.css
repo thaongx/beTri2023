@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'SVN-Moon Earth';
+    src: url('SVN-MoonEarth-Regular.eot');
+    src: url('SVN-MoonEarth-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SVN-MoonEarth-Regular.woff2') format('woff2'),
+        url('SVN-MoonEarth-Regular.woff') format('woff'),
+        url('SVN-MoonEarth-Regular.ttf') format('truetype'),
+        url('SVN-MoonEarth-Regular.svg#SVN-MoonEarth-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

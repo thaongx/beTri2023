@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'SVN-Moon Earth';
+    src: url('SVN-MoonEarth-Regular.eot');
+    src: url('SVN-MoonEarth-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SVN-MoonEarth-Regular.woff2') format('woff2'),
+        url('SVN-MoonEarth-Regular.woff') format('woff'),
+        url('SVN-MoonEarth-Regular.ttf') format('truetype'),
+        url('SVN-MoonEarth-Regular.svg#SVN-MoonEarth-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+	background-color: #FFFDF6;
+	font-family: SVN-Moon Earth;
+	font-size: 32px;
+
+}
+
+.popup {
+	text-align: center;
+	font-size: 9vh;
+	color: #603913;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: 100vh;
+	animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+
+	font-size: 3.1vh;
+  	visibility: hidden;
+  	line-height:125%;
+  	width: 100%;
+  	background-color: #FFFDF6;
+  	color: #603913;
+  	text-align: center;
+  	padding: 100px 25vw;
+ 	position: absolute;
+  	z-index: 1;
+
+  	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn .5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.credit {
+	position: absolute;
+	display: flex;
+	bottom: 3vh;
+	right: 2.5vw;
+	font-size: 2.5vh;
+	color: #808285;
+
+}
+
+
+.box1 {
+	position: absolute;
+	display: flex;
+	background-color: #D1D3D4;
+	width:19vw;
+	height: 25vh;
+	top:20vh;
+	z-index: 2;
+
+}
+
+
+.box2 {
+	position: absolute;
+	display: flex;
+	background-color: #E6E7E8;
+	width:14vw;
+	height: 32vh;
+	left:29vw;
+	top:0px;
+	z-index: 2;
+
+}
+
+.box3 {
+	position: absolute;
+	display: flex;
+	background-color: #D1D3D4;
+	width:19vw;
+	height: 25vh;
+	right: 29vw;
+	top:0px;
+	z-index: 2;
+
+}
+
+.box4 {
+	position: absolute;
+	display: flex;
+	background-color: #BCBEC0;
+	width:14vw;
+	height: 32vh;
+	top:10vh;
+	right:5vw;
+	z-index: 2;
+
+}
+
+.box5 {
+	position: absolute;
+	display: flex;
+	background-color: #D1D3D4;
+	width:19vw;
+	height: 25vh;
+	bottom:20vh;
+	right: 0px;
+	z-index: 2;
+
+}
+
+.box6 {
+	position: absolute;
+	display: flex;
+	background-color: #E6E7E8;
+	width:14vw;
+	height: 32vh;
+	bottom:0px;
+	right: 29vw;
+	z-index: 2;
+
+}
+
+.box7 {
+	position: absolute;
+	display: flex;
+	background-color: #D1D3D4;
+	width:19vw;
+	height: 25vh;
+	bottom: 0px;
+	left: 29vw;
+	z-index: 2;
+
+}
+
+.box8 {
+	position: absolute;
+	display: flex;
+	background-color: #A7A9AC;
+	width:14vw;
+	height: 32vh;
+	left:5vw;
+	bottom: 10vh;
+	z-index: 2;
+
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .25s ease;
+  background-color: #00000;
+}
+
+.box1:hover .overlay {
+  opacity: 1;
+}
+
+.text1 {
+  color: black;
+  font-size: 2.5vh;
+  position: absolute;
+  top: 80%;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box2:hover .overlay {
+  opacity: 1;
+}
+
+.text2 {
+  color: black;
+  font-size: 2.5vh;
+  position: absolute;
+  width: 18vw;
+  top: 88%;
+  left: 120%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box3:hover .overlay {
+  opacity: 1;
+}
+
+.text3 {
+  color: black;
+  font-size: 2.5vh;
+  position: absolute;
+  width: 18vw;
+  top: 88%;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box4:hover .overlay {
+  opacity: 1;
+}
+
+.text4 {
+  color: black;
+  font-size: 2.5vh;
+  position: absolute;
+  width: 18vw;
+  top: 88%;
+  right: -10%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box5:hover .overlay {
+  opacity: 1;
+}
+
+.text5 {
+  color: black;
+  font-size: 2.5vh;
+  position: absolute;
+  width: 18vw;
+  top: 88%;
+  right: 0%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box6:hover .overlay {
+  opacity: 1;
+}
+
+.text6 {
+  color: black;
+  font-size: 2.5vh;
+  position: absolute;
+  width: 18vw;
+  top: 15%;
+  left: 0%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box7:hover .overlay {
+  opacity: 1;
+}
+
+.text7 {
+  color: black;
+  font-size: 2.5vh;
+  position: absolute;
+  width: 18vw;
+  top: 30%;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box8:hover .overlay {
+  opacity: 1;
+}
+
+.text8 {
+  color: black;
+  font-size: 2.5vh;
+  position: absolute;
+  width: 18vw;
+  top: 30%;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
